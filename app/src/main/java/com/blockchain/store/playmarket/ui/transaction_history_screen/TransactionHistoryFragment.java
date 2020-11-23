@@ -1,24 +1,22 @@
 package com.blockchain.store.playmarket.ui.transaction_history_screen;
 
-
-import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.TransactionHistoryAdapter;
 import com.blockchain.store.playmarket.data.entities.TransactionModel;
 import com.blockchain.store.playmarket.utilities.Constants;
 import com.blockchain.store.playmarket.utilities.TransactionPrefsUtil;
-
-import org.web3j.crypto.TransactionUtils;
 
 import java.util.ArrayList;
 
@@ -33,7 +31,8 @@ public class TransactionHistoryFragment extends Fragment {
     private static final String STATUS_KEY = "status_key";
     private static final String SHOW_ALL_KEY = "show_all_transcation";
 
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.empty_view) TextView emptyView;
 
     private Constants.TransactionStatus showTransactionType;

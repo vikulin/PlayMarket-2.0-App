@@ -1,6 +1,6 @@
 package com.blockchain.store.playmarket.data.fileproviders;
 
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 
 /**
  * Created by samsheff on 08/09/2017.

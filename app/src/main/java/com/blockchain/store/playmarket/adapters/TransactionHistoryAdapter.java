@@ -4,12 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.constraint.Group;
-import android.support.transition.TransitionManager;
-import android.support.transition.TransitionSet;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.Group;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.transition.TransitionManager;
+import androidx.transition.TransitionSet;
+
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -97,7 +99,8 @@ public class TransactionHistoryAdapter extends RecyclerView.Adapter<RecyclerView
         @BindView(R.id.right_line) View rightLine;
         @BindView(R.id.detail_holder) LinearLayout detailHolder;
         @BindView(R.id.details_additional_info) TextView detailAdditionalInfo;
-        @BindView(R.id.group) Group group;
+        @BindView(R.id.group)
+        Group group;
 
         private Context context;
 

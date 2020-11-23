@@ -1,6 +1,6 @@
 package com.blockchain.store.dao.database.database_converters;
 
-import android.arch.persistence.room.TypeConverter;
+import androidx.room.TypeConverter;
 
 import com.blockchain.store.dao.database.model.Vote;
 import com.google.gson.Gson;

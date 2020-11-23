@@ -3,10 +3,11 @@ package com.blockchain.store.playmarket.ui.file_manager_screen;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,7 +48,9 @@ public class FileManagerActivity extends AppCompatActivity implements FileManage
 
     private String jsonData;
 
-    @BindView(R.id.folders_recyclerView) RecyclerView foldersRecyclerView;
+
+    @BindView(R.id.folders_recyclerView)
+    RecyclerView foldersRecyclerView;
 
     @BindView(R.id.path_textView) TextView pathTextView;
 
@@ -101,6 +104,7 @@ public class FileManagerActivity extends AppCompatActivity implements FileManage
     }
 
     private void setFoldersRecyclerView(ArrayList<File> foldersList) {
+
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         foldersRecyclerView.setLayoutManager(layoutManager);
         foldersRecyclerView.setHasFixedSize(true);

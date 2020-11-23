@@ -1,9 +1,9 @@
 package com.blockchain.store.playmarket.ui.local_ico_screen;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
@@ -14,7 +14,8 @@ import butterknife.ButterKnife;
 public class IcoLocalActivity extends BaseActivity {
     private static final String TAG = "IcoLocalActivity";
 
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     private NewIcoAdapter adapter;
 

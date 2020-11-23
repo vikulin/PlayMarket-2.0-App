@@ -3,16 +3,17 @@ package com.blockchain.store.playmarket.ui.main_list_screen;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.AppListAdapter;
@@ -32,7 +33,8 @@ public class MainMenuFragment extends Fragment implements MainFragmentContract.V
     private static final String CATEGORY_EXTRA_ARGS = "category_extra_args";
     private static final String LIST_STATE_KEY = "list_state_key";
 
-    @BindView(R.id.recycler_view_main) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view_main)
+    RecyclerView recyclerView;
     @BindView(R.id.progress_bar_main) ProgressBar progressBar;
 
     private AppListCallbacks mainCallback;

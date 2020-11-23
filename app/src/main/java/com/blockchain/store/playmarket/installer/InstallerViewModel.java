@@ -1,9 +1,6 @@
 package com.blockchain.store.playmarket.installer;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 
 import com.blockchain.store.playmarket.installer.rootless.RootlessSAIPackageInstaller;
@@ -14,6 +11,9 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 
 public class InstallerViewModel extends AndroidViewModel implements SAIPackageInstaller.InstallationStatusListener {
     public static final String EVENT_PACKAGE_INSTALLED = "package_installed";

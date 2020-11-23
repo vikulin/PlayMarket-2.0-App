@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:background="@color/colorPrimary">
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/leave_feedback"
         style="@style/positiveButton"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:text="@string/leave_feedback"
         android:textAllCaps="false" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
 
         android:id="@+id/leave_feedback_tv"
         android:layout_width="wrap_content"

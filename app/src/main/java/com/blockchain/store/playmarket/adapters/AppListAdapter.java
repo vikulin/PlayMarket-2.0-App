@@ -1,13 +1,14 @@
 package com.blockchain.store.playmarket.adapters;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.data.entities.AppDispatcherType;
@@ -21,8 +22,6 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-import static android.support.v7.widget.RecyclerView.ViewHolder;
 
 /**
  * Created by Crypton04 on 24.01.2018.
@@ -48,7 +47,7 @@ public class AppListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.main_list_item, parent, false);
         AppListViewHolder appListViewHolder = new AppListViewHolder(view);
@@ -92,7 +91,7 @@ public class AppListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof AppListViewHolder) {
             holderCallback.onViewHolderCreated(appDispatcherTypes.get(position));
             ((AppListViewHolder) holder).bind(subCategories.get(position), appDispatcherTypes.get(position), position);
@@ -119,7 +118,7 @@ public class AppListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         notifyItemRangeInserted(0, appDispatcherTypes.size());
     }
 
-    public class AppListViewHolder extends ViewHolder {
+    public class AppListViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.id_category_title) TextView categoryTitle;
         @BindView(R.id.id_category_arrow) TextView categoryArrow;
         @BindView(R.id.recycler_view_nested) RecyclerView recyclerViewNested;

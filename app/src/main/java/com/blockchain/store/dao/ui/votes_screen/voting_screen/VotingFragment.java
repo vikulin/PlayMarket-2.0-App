@@ -2,10 +2,6 @@ package com.blockchain.store.dao.ui.votes_screen.voting_screen;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.constraint.Group;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +9,11 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.Group;
+import androidx.fragment.app.Fragment;
 
 import com.blockchain.store.dao.data.TokenBalance;
 import com.blockchain.store.dao.database.model.Proposal;
@@ -50,7 +51,8 @@ public class VotingFragment extends Fragment implements VotingContract.View {
     @BindView(R.id.majorityPercent_textView) TextView majorityPercentTextView;
     @BindView(R.id.minMajority_textView) TextView minMajorityTextView;
     @BindView(R.id.majority_textView) TextView majorityTextView;
-    @BindView(R.id.ongoingGroup) Group ongoingGroup;
+    @BindView(R.id.ongoingGroup)
+    Group ongoingGroup;
     @BindView(R.id.finishGroup) Group finishGroup;
     @BindView(R.id.voteForSupport_button) Button voteForSupportButton;
     @BindView(R.id.voteAgainst_button) Button voteAgainstButton;

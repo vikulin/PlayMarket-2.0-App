@@ -1,8 +1,9 @@
 package com.blockchain.store.playmarket.utilities;
 
 import android.content.Context;
-import android.support.annotation.StringRes;
 import android.widget.Toast;
+
+import androidx.annotation.StringRes;
 
 /**
  * Created by Crypton04 on 24.01.2018.

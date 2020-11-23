@@ -2,15 +2,16 @@ package com.blockchain.store.playmarket.ui.app_detail_screen;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.graphics.Palette;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.widget.NestedScrollView;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.palette.graphics.Palette;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.text.Html;
 import android.util.Pair;
 import android.view.View;
@@ -81,7 +82,8 @@ public class AppDetailActivity extends BaseActivity implements AppDetailContract
 
     @BindView(R.id.invest_btn) Button investBtn;
     @BindView(R.id.delete_view) TextView deleteBtn;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.price_progress_bar) ProgressBar priceProgressBar;
 
     private boolean isUserPurchasedApp;

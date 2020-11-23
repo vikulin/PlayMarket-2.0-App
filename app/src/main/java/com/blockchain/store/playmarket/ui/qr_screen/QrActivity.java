@@ -2,7 +2,6 @@ package com.blockchain.store.playmarket.ui.qr_screen;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 

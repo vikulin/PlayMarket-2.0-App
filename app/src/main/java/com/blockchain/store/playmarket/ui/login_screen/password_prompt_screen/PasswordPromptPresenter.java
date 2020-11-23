@@ -2,8 +2,9 @@ package com.blockchain.store.playmarket.ui.login_screen.password_prompt_screen;
 
 import android.app.KeyguardManager;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
+
+import androidx.annotation.NonNull;
+import androidx.core.hardware.fingerprint.FingerprintManagerCompat;
 import android.util.Log;
 
 import com.blockchain.store.playmarket.R;

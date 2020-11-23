@@ -1,10 +1,11 @@
 package com.blockchain.store.playmarket.dapps;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.annotation.RawRes;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RawRes;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.utilities.AccountManager;

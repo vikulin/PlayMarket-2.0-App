@@ -2,9 +2,8 @@ package com.blockchain.store.playmarket.ui.fingerprint_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.content.res.AppCompatResources;
+
+import androidx.appcompat.content.res.AppCompatResources;
 import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +18,7 @@ import com.blockchain.store.playmarket.ui.main_list_screen.MainMenuActivity;
 import com.blockchain.store.playmarket.ui.new_user_welcome_activity.NewUserWelcomeActivity;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
 import com.blockchain.store.playmarket.utilities.Constants;
+import com.google.android.material.textfield.TextInputLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,7 +28,8 @@ import butterknife.OnTextChanged;
 public class FingerprintConfiguringActivity extends BaseActivity implements FingerprintConfiguringContract.View {
 
     @BindView(R.id.confirm_password_layout) LinearLayout confirmPasswordLinearLayout;
-    @BindView(R.id.account_password_textInputLayout) TextInputLayout accountPasswordTextInputLayout;
+    @BindView(R.id.account_password_textInputLayout)
+    TextInputLayout accountPasswordTextInputLayout;
     @BindView(R.id.account_password_editText) EditText accountPasswordEditText;
     @BindView(R.id.confirm_password_button) Button confirmPasswordButton;
     @BindView(R.id.available_fingerprint_imageView) ImageView availableFingerprintImageView;

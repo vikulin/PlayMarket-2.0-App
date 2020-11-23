@@ -25,7 +25,7 @@
         android:text="@string/import_message"
         android:textAlignment="center" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.appcompat.widget.RecyclerView
         android:id="@+id/json_keysore_files_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="225dp"
@@ -34,7 +34,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="30dp">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.appcompat.widget.RecyclerView>
 
     <LinearLayout
         android:layout_width="match_parent"

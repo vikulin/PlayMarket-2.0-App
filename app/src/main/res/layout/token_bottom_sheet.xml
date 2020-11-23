@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.ConstraintLayout
         android:id="@+id/bottom_contraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -120,6 +120,6 @@
             app:searchBackground="@color/nav_image_tint"
             app:searchSuggestionIcon="@null" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.ConstraintLayout>
 
 </android.support.design.widget.CoordinatorLayout>

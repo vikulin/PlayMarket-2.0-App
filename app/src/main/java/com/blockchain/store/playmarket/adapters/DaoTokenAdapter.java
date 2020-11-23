@@ -2,9 +2,6 @@ package com.blockchain.store.playmarket.adapters;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -13,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.dao.data.entities.DaoToken;
 import com.blockchain.store.dao.ui.DaoConstants;
@@ -215,7 +216,8 @@ public class DaoTokenAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         @BindView(R.id.token_balance) TextView token_balance;
         @BindView(R.id.imageView2) ImageView imageView2;
         @BindView(R.id.expandable_layout) ExpandableLayout expandableLayout;
-        @BindView(R.id.linearLayout2) ConstraintLayout rootLayout;
+        @BindView(R.id.linearLayout2)
+        ConstraintLayout rootLayout;
         @BindView(R.id.delete_holder) View deleteHolder;
         @BindView(R.id.dividends_amount_field) TextView dividendsAmountField;
         @BindView(R.id.progress_bar) ProgressBar progressBar;

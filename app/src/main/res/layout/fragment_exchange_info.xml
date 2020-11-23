@@ -19,7 +19,7 @@
         tools:context="com.blockchain.store.playmarket.ui.exchange_screen.ExchangeActivity"
         tools:visibility="visible">
 
-        <android.support.v7.widget.AppCompatTextView
+        <androidx.appcompat.widget.AppCompatTextView
             style="@style/exchangeTextTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

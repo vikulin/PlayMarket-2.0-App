@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardView"
@@ -10,7 +10,7 @@
     android:layout_marginBottom="6dp"
     app:cardElevation="6dp">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.ConstraintLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -121,6 +121,6 @@
             app:layout_constraintStart_toEndOf="@+id/invest_clock_image"
             app:layout_constraintTop_toTopOf="@+id/time_remains" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.ConstraintLayout>
 
-</android.support.v7.widget.CardView>
+</androidx.appcompat.widget.CardView>

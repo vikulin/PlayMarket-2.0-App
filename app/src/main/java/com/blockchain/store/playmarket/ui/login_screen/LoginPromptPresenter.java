@@ -1,8 +1,5 @@
 package com.blockchain.store.playmarket.ui.login_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
-import android.content.Context;
-
 import com.blockchain.store.playmarket.utilities.FileUtils;
 
 import java.io.File;

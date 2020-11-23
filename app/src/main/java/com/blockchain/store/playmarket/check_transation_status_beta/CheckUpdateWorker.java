@@ -1,7 +1,6 @@
 package com.blockchain.store.playmarket.check_transation_status_beta;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.util.Pair;
 
@@ -17,6 +16,7 @@ import com.orhanobut.hawk.Hawk;
 
 import java.util.ArrayList;
 
+import androidx.annotation.NonNull;
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
 

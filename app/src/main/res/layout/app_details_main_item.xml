@@ -194,7 +194,7 @@
             android:layout_marginStart="8dp"
             android:layout_weight="1">
 
-            <android.support.v7.widget.AppCompatButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/action_btn"
                 style="@style/positiveButton"
                 android:layout_width="match_parent"

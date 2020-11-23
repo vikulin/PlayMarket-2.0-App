@@ -3,11 +3,11 @@ package com.blockchain.store.playmarket.ui.change_account_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetDialog;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,6 +22,7 @@ import com.blockchain.store.playmarket.ui.main_list_screen.MainMenuActivity;
 import com.blockchain.store.playmarket.utilities.AccountManager;
 import com.blockchain.store.playmarket.utilities.dialogs.DialogManager;
 import com.blockchain.store.playmarket.utilities.dialogs.DeleteAccountDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import org.ethereum.geth.Account;
 
@@ -36,7 +37,8 @@ import static com.blockchain.store.playmarket.ui.main_list_screen.MainMenuActivi
  */
 public class ChangeAccountFragment extends Fragment implements ChangeAccountContract.View {
 
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     private ChangeAccountAdapter adapter;
     private ChangeAccountPresenter presenter;

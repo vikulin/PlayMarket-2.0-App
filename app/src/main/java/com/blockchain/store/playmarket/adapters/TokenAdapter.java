@@ -1,9 +1,6 @@
 package com.blockchain.store.playmarket.adapters;
 
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
-import android.support.constraint.Group;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,10 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.Group;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.dao.data.entities.DaoToken;
 import com.blockchain.store.playmarket.R;
@@ -144,7 +145,8 @@ public class TokenAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         @BindView(R.id.name) TextView name;
         @BindView(R.id.symbol) TextView symbol;
         @BindView(R.id.button) TextView button;
-        @BindView(R.id.group) Group group;
+        @BindView(R.id.group)
+        Group group;
         @BindView(R.id.progress_bar) ProgressBar progressBar;
         @BindView(R.id.imageView2) ImageView transferIcon;
 

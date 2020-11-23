@@ -1,14 +1,13 @@
 package com.blockchain.store.playmarket.ui.activity_screen;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.NewsAdapter;
@@ -23,7 +22,8 @@ public class NewsActivity extends BaseActivity implements NewsActivityContract.V
     private static final String TAG = "NewsActivity";
 
     @BindView(R.id.top_layout_app_name) TextView toolbarTitle;
-    @BindView(R.id.recyclerView) RecyclerView recyclerView;
+    @BindView(R.id.recyclerView)
+    RecyclerView recyclerView;
     @BindView(R.id.error_holder) LinearLayout errorHolder;
     private NewsAdapter adapter;
     private NewsActivityContract.Presenter presenter;

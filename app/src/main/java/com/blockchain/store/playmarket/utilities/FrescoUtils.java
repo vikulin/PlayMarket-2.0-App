@@ -3,7 +3,8 @@ package com.blockchain.store.playmarket.utilities;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.support.v7.graphics.Palette;
+
+import androidx.palette.graphics.Palette;
 
 import com.facebook.common.executors.CallerThreadExecutor;
 import com.facebook.common.references.CloseableReference;

@@ -2,7 +2,7 @@ package com.blockchain.store.playmarket.utilities;
 
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.ContextThemeWrapper;
 
 import com.blockchain.store.playmarket.Application;

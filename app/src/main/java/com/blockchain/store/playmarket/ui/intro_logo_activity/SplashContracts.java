@@ -1,7 +1,8 @@
 package com.blockchain.store.playmarket.ui.intro_logo_activity;
 
 import android.content.Context;
-import android.support.annotation.StringRes;
+
+import androidx.annotation.StringRes;
 
 /**
  * Created by Crypton04 on 24.01.2018.

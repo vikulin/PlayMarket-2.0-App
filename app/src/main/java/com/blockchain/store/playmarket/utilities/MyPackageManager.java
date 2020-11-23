@@ -7,16 +7,12 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Bundle;
 import android.os.Environment;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 import android.util.Log;
 
 import com.blockchain.store.playmarket.Application;
-import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.data.entities.App;
-import com.blockchain.store.playmarket.installer.InstallerViewModel;
-import com.blockchain.store.playmarket.interfaces.NotificationImpl;
 import com.blockchain.store.playmarket.services.DownloadService;
 import com.blockchain.store.playmarket.utilities.device.BuildUtils;
 

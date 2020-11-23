@@ -1,10 +1,12 @@
 package com.blockchain.store.playmarket.adapters;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -171,7 +173,8 @@ public class MyAppsAdapter extends RecyclerView.Adapter<MyAppsAdapter.MyAppsView
         @BindView(R.id.my_apps_size) TextView size;
         @BindView(R.id.my_apps_size_title) TextView sizeTitle;
         @BindView(R.id.my_apps_status) AppCompatButton status;
-        @BindView(R.id.my_apps_holder) CardView layoutHolder;
+        @BindView(R.id.my_apps_holder)
+        CardView layoutHolder;
         @BindView(R.id.my_apps_action_btn_area) LinearLayout actionAreaHolder;
 
         private Context context;

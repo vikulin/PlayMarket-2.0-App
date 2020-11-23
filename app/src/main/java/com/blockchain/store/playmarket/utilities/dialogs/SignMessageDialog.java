@@ -2,18 +2,19 @@ package com.blockchain.store.playmarket.utilities.dialogs;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.support.constraint.Group;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.constraintlayout.widget.Group;
+
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.utilities.AccountManager;
 import com.blockchain.store.playmarket.utilities.FingerprintUtils;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.mtramin.rxfingerprint.RxFingerprint;
 
 import butterknife.BindView;

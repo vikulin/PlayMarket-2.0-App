@@ -13,16 +13,17 @@ import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.transition.Transition;
-import android.support.transition.TransitionValues;
 import android.util.AttributeSet;
 import android.util.IntProperty;
 import android.util.Property;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.transition.Transition;
+import androidx.transition.TransitionValues;
 
 /**
  * This transition tracks changes during scene changes to the
@@ -45,7 +46,7 @@ public class Recolor extends Transition {
     public static final Property<ColorDrawable, Integer> COLORDRAWABLE_COLOR;
 
     static {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+        if (Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
             TEXTVIEW_TEXT_COLOR = new IntProperty<TextView>("") {
 
                 @Override

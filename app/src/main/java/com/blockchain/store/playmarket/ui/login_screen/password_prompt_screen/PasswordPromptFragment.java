@@ -1,13 +1,13 @@
 package com.blockchain.store.playmarket.ui.login_screen.password_prompt_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v7.content.res.AppCompatResources;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +24,7 @@ import com.blockchain.store.playmarket.ui.login_screen.LoginPromptActivity;
 import com.blockchain.store.playmarket.ui.login_screen.LoginViewModel;
 import com.blockchain.store.playmarket.ui.main_list_screen.MainMenuActivity;
 import com.blockchain.store.playmarket.utilities.ToastUtil;
+import com.google.android.material.textfield.TextInputLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,7 +44,8 @@ public class PasswordPromptFragment extends Fragment implements PasswordPromptCo
     @BindView(R.id.info_textView) TextView infoTextView;
     @BindView(R.id.fingerprint_layout) LinearLayout fingerPrintLayout;
     @BindView(R.id.configure_fingerprint_button) Button configureFingerprintButton;
-    @BindView(R.id.password_textInputLayout) TextInputLayout passwordTextInputLayout;
+    @BindView(R.id.password_textInputLayout)
+    TextInputLayout passwordTextInputLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

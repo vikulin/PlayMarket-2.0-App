@@ -2,9 +2,6 @@ package com.blockchain.store.dao.ui.votes_screen.proposal_creation_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,9 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
 import com.blockchain.store.dao.data.TokenBalance;
 import com.blockchain.store.dao.database.model.Proposal;
 import com.blockchain.store.playmarket.R;
@@ -20,6 +20,7 @@ import com.blockchain.store.playmarket.utilities.Constants;
 import com.blockchain.store.playmarket.utilities.dialogs.DialogManager;
 import com.blockchain.store.playmarket.utilities.QRCodeScannerActivity;
 import com.blockchain.store.playmarket.utilities.ToastUtil;
+import com.google.android.material.textfield.TextInputLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -32,7 +33,8 @@ public class ProposalCreationFragment extends Fragment implements ProposalCreati
 
     @BindView(R.id.scrollView) ScrollView scrollView;
     @BindView(R.id.progress_bar) ProgressBar progressBar;
-    @BindView(R.id.recipient_inputLayout) TextInputLayout recipientInputLayout;
+    @BindView(R.id.recipient_inputLayout)
+    TextInputLayout recipientInputLayout;
     @BindView(R.id.recipient_editText) EditText recipientEditText;
     @BindView(R.id.amount_inputLayout) TextInputLayout amountInputLayout;
     @BindView(R.id.amount_editText) EditText amountEditText;

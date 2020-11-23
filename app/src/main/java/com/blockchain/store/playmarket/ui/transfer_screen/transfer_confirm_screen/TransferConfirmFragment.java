@@ -1,10 +1,10 @@
 package com.blockchain.store.playmarket.ui.transfer_screen.transfer_confirm_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v7.content.res.AppCompatResources;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import android.text.Editable;
 import android.text.Html;
 import android.util.Log;
@@ -20,6 +20,7 @@ import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity;
 import com.blockchain.store.playmarket.ui.transfer_screen.TransferViewModel;
 import com.blockchain.store.playmarket.utilities.FingerprintUtils;
+import com.google.android.material.textfield.TextInputLayout;
 import com.mtramin.rxfingerprint.RxFingerprint;
 
 import butterknife.BindView;
@@ -37,7 +38,8 @@ public class TransferConfirmFragment extends Fragment {
     @BindView(R.id.amount_info_textView) TextView transferAmountTextView;
     @BindView(R.id.dimension_info_textView) TextView dimensionTextView;
     @BindView(R.id.password_editText) EditText passwordEditText;
-    @BindView(R.id.password_textInputLayout) TextInputLayout passwordTextInputLayout;
+    @BindView(R.id.password_textInputLayout)
+    TextInputLayout passwordTextInputLayout;
     @BindView(R.id.fingerprint_layout) LinearLayout fingerprintLayout;
     @BindView(R.id.password_layout) LinearLayout passwordLayout;
     @BindView(R.id.transaction_state_textView) TextView transactionStateTextView;

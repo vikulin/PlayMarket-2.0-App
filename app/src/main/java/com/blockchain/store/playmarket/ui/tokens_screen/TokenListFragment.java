@@ -1,10 +1,6 @@
 package com.blockchain.store.playmarket.ui.tokens_screen;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +10,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.dao.data.entities.DaoToken;
 import com.blockchain.store.playmarket.R;
@@ -36,7 +37,8 @@ public class TokenListFragment extends Fragment implements TokenListContract.Vie
     @BindView(R.id.find_btn) Button findBtn;
     @BindView(R.id.progress_bar) ProgressBar progressBar;
     @BindView(R.id.find_token_progress_bar) ProgressBar findTokenProgressBar;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.error_holder) LinearLayout erroHolder;
 
     private TokenAdapter adapter;

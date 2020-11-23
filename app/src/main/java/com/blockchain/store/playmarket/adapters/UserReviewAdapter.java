@@ -3,15 +3,16 @@ package com.blockchain.store.playmarket.adapters;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.data.entities.UserReview;
@@ -110,7 +111,8 @@ public class UserReviewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         @BindView(R.id.user_rating_bar) MaterialRatingBar userRatingBar;
         @BindView(R.id.user_commentary) TextView userCommentary;
         @BindView(R.id.read_more) TextView readMore;
-        @BindView(R.id.root_view) ConstraintLayout constraintLayout;
+        @BindView(R.id.root_view)
+        ConstraintLayout constraintLayout;
         @BindView(R.id.divider) View divider;
 
         private ObjectAnimator textDescriptionAnimator;

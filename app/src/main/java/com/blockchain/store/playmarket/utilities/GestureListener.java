@@ -1,8 +1,9 @@
 package com.blockchain.store.playmarket.utilities;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by Crypton04 on 02.03.2018.

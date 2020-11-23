@@ -3,8 +3,9 @@ package com.blockchain.store.playmarket.ui.all_reviews_screen;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.UserReviewAdapter;
@@ -20,7 +21,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class AllReviewsActivity extends BaseActivity implements UserReviewAdapter.UserReviewCallback, AllReviewsContract.View {
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     private UserReviewAdapter adapter;
     private ArrayList<UserReview> userReviews;

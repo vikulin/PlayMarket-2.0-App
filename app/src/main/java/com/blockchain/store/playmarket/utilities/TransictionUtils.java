@@ -1,10 +1,11 @@
 package com.blockchain.store.playmarket.utilities;
 
-import android.support.transition.AutoTransition;
-import android.support.transition.ChangeBounds;
-import android.support.transition.ChangeTransform;
-import android.support.transition.TransitionSet;
 import android.view.animation.AccelerateInterpolator;
+
+import androidx.transition.AutoTransition;
+import androidx.transition.ChangeBounds;
+import androidx.transition.ChangeTransform;
+import androidx.transition.TransitionSet;
 
 import com.blockchain.store.playmarket.utilities.transitions.Recolor;
 

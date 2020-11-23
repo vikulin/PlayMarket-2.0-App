@@ -3,16 +3,17 @@ package com.blockchain.store.playmarket.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.view.ContextThemeWrapper;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.LinearSnapHelper;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SnapHelper;
-import android.support.v7.widget.SwitchCompat;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.ContextThemeWrapper;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
+import androidx.viewpager.widget.ViewPager;
+
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -362,7 +363,8 @@ public class AppDetailAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         @BindView(R.id.arrowLeft) ImageView arrowLeft;
         @BindView(R.id.arrowRight) ImageView arrowRight;
         @BindView(R.id.step_counter) TextView setCounter;
-        @BindView(R.id.ico_viewpager) ViewPager viewpager;
+        @BindView(R.id.ico_viewpager)
+        ViewPager viewpager;
         ViewPagerAdapter viewPagerAdapter;
 
         public IcoStepViewHolder(View itemView) {

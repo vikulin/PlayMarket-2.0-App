@@ -3,7 +3,6 @@ package com.blockchain.store.playmarket.ui.pex_screen;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -17,6 +16,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+
+import androidx.fragment.app.Fragment;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.dapps.Web3View;
@@ -34,7 +35,6 @@ import com.google.gson.Gson;
 
 import org.ethereum.geth.Account;
 import org.ethereum.geth.Transaction;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.spongycastle.util.encoders.Hex;
 import org.web3j.protocol.Web3j;

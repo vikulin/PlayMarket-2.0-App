@@ -1,6 +1,5 @@
 package com.blockchain.store.playmarket.ui.unlock_account_screen;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.blockchain.store.playmarket.R;

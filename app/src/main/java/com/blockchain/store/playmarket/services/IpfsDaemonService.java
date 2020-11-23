@@ -6,9 +6,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import android.util.Log;
 
 import com.blockchain.store.playmarket.R;
@@ -17,6 +16,8 @@ import com.blockchain.store.playmarket.utilities.Constants;
 import com.blockchain.store.playmarket.utilities.ipfs.IPFSDaemon;
 
 import androidx.annotation.Nullable;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import okhttp3.ResponseBody;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -38,7 +39,7 @@ public class IpfsDaemonService extends IntentService {
     }
 
     @Override
-    protected void onHandleIntent(@Nullable @android.support.annotation.Nullable Intent intent) {
+    protected void onHandleIntent(@Nullable Intent intent) {
         Log.d(TAG, "onHandleIntent() called with: intent = [" + intent + "]");
         if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase("STOP")) {
             stopSelf();
@@ -79,7 +80,7 @@ public class IpfsDaemonService extends IntentService {
     }
 
     @Override
-    public int onStartCommand(@Nullable @android.support.annotation.Nullable Intent intent, int flags, int startId) {
+    public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
         Log.d(TAG, "onStartCommand() called with: intent = [" + intent + "], flags = [" + flags + "], startId = [" + startId + "]");
         if (intent != null && intent.getAction() != null && intent.getAction().equalsIgnoreCase("STOP")) {
             stopSelf();

@@ -1,8 +1,9 @@
 package com.blockchain.store.playmarket.utilities.glide_svg;
 import android.graphics.Picture;
 import android.graphics.drawable.PictureDrawable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.load.Options;
 import com.bumptech.glide.load.engine.Resource;

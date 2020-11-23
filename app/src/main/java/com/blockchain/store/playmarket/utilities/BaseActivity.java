@@ -1,7 +1,7 @@
 package com.blockchain.store.playmarket.utilities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import com.blockchain.store.playmarket.services.IpfsDaemonService;

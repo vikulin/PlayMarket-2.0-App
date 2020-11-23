@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="@string/transfer" />
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button2"
         style="@style/positiveButton"
         android:layout_width="80dp"

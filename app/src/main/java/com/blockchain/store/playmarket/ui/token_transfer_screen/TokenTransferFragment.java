@@ -2,13 +2,6 @@ package com.blockchain.store.playmarket.ui.token_transfer_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.constraint.Group;
-import android.support.design.widget.TabLayout;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +13,11 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.Group;
+import androidx.fragment.app.Fragment;
+
 import com.blockchain.store.dao.data.entities.DaoToken;
 import com.blockchain.store.dao.ui.DaoConstants;
 import com.blockchain.store.playmarket.R;
@@ -28,6 +26,9 @@ import com.blockchain.store.playmarket.utilities.AccountManager;
 import com.blockchain.store.playmarket.utilities.dialogs.DialogManager;
 import com.blockchain.store.playmarket.utilities.QRCodeScannerActivity;
 import com.blockchain.store.playmarket.utilities.ToastUtil;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,10 +46,14 @@ public class TokenTransferFragment extends Fragment implements TokenTransferCont
     @BindView(R.id.repositoryBalance_textView) TextView repositoryBalanceTextView;
     @BindView(R.id.token_textView) TextView tokenTextView;
     @BindView(R.id.token2_textView) TextView token2TextView;
-    @BindView(R.id.tabLayout) TabLayout tabLayout;
-    @BindView(R.id.send_group) Group sendGroup;
-    @BindView(R.id.send_InputLayout) TextInputLayout sendInputLayout;
-    @BindView(R.id.send_EditText) TextInputEditText sendEditText;
+    @BindView(R.id.tabLayout)
+    TabLayout tabLayout;
+    @BindView(R.id.send_group)
+    Group sendGroup;
+    @BindView(R.id.send_InputLayout)
+    TextInputLayout sendInputLayout;
+    @BindView(R.id.send_EditText)
+    TextInputEditText sendEditText;
     @BindView(R.id.repository_textView) TextView repositoryTextView;
     @BindView(R.id.recipient_editText) TextInputEditText recipientEditText;
     @BindView(R.id.textView3) TextView balanceRepositoryTitle;

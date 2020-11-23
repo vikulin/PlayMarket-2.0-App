@@ -1,26 +1,20 @@
 package com.blockchain.store.playmarket.ui.transaction_history_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+
 import android.widget.TextView;
 
+import androidx.lifecycle.ViewModelProviders;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.viewpager.widget.ViewPager;
+
 import com.blockchain.store.playmarket.R;
-import com.blockchain.store.playmarket.adapters.TransactionHistoryAdapter;
 import com.blockchain.store.playmarket.data.entities.TransactionModel;
-import com.blockchain.store.playmarket.ui.exchange_screen.ExchangeActivityViewModel;
 import com.blockchain.store.playmarket.ui.transaction_history_screen.TransactionHistoryActivityContract.View;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
 import com.blockchain.store.playmarket.utilities.Constants;
-import com.blockchain.store.playmarket.utilities.TransactionPrefsUtil;
 import com.blockchain.store.playmarket.utilities.ViewPagerAdapter;
-import com.blockchain.store.playmarket.views.FonAwesomeTextViewSolid;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
@@ -32,10 +26,13 @@ public class TransactionHistoryActivity extends BaseActivity implements View {
 
     private static final String TAG = "TransactionHistoryActiv";
 
-    @BindView(R.id.tab_layout) TabLayout tabLayout;
-    @BindView(R.id.view_pager) ViewPager viewPager;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+    @BindView(R.id.view_pager)
+    ViewPager viewPager;
     @BindView(R.id.title) TextView title;
-    @BindView(R.id.swipe_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
+    @BindView(R.id.swipe_refresh_layout)
+    SwipeRefreshLayout swipeRefreshLayout;
     TransactionHistoryActivityPresenter presenter;
     TransactionHistoryViewModel viewModel;
 

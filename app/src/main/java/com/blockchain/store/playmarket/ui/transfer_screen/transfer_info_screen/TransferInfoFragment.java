@@ -1,12 +1,8 @@
 package com.blockchain.store.playmarket.ui.transfer_screen.transfer_info_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
-import android.text.InputFilter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,13 +11,16 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.data.entities.UserBalance;
 import com.blockchain.store.playmarket.data.types.EthereumPrice;
 import com.blockchain.store.playmarket.ui.transfer_screen.TransferViewModel;
 import com.blockchain.store.playmarket.utilities.Constants;
-import com.blockchain.store.playmarket.utilities.InputFilterMinMax;
 import com.blockchain.store.playmarket.utilities.QRCodeScannerActivity;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.math.BigDecimal;
 
@@ -47,7 +46,8 @@ public class TransferInfoFragment extends Fragment implements TransferInfoContra
     @BindView(R.id.eth_textView) TextView ethTextView;
     @BindView(R.id.custom_token) TextView customTokenTextView;
     @BindView(R.id.error_view_holder) LinearLayout errorViewHolder;
-    @BindView(R.id.recipient_address_textInputLayout) TextInputLayout recipientAddressTextInputLayout;
+    @BindView(R.id.recipient_address_textInputLayout)
+    TextInputLayout recipientAddressTextInputLayout;
     @BindView(R.id.amount_textInputLayout) TextInputLayout amountTextInputLayout;
     @BindView(R.id.qr_scanner_button) ImageButton qrCodeImage;
     @BindView(R.id.dimension_linearLayout) View dimensionHolder;

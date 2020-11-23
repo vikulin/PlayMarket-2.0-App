@@ -2,10 +2,6 @@ package com.blockchain.store.dao.ui.dividends_screen;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.dao.data.entities.DaoToken;
 import com.blockchain.store.playmarket.R;
@@ -41,7 +42,8 @@ public class DividendsFragment extends Fragment implements DividendsContract.Vie
     @BindView(R.id.error_holder) LinearLayout errorHolder;
     @BindView(R.id.background) View background;
     @BindView(R.id.back_arrow) ImageView backArrow;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     public DividendsFragment() {
         // Required empty public constructor

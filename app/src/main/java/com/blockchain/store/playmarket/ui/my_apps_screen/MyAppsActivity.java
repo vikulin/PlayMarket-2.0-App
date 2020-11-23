@@ -1,10 +1,6 @@
 package com.blockchain.store.playmarket.ui.my_apps_screen;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -12,6 +8,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.MyAppsAdapter;
@@ -22,6 +22,7 @@ import com.blockchain.store.playmarket.interfaces.AppsAdapterCallback;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
 import com.blockchain.store.playmarket.utilities.Constants;
 import com.blockchain.store.playmarket.utilities.MyPackageManager;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
@@ -33,7 +34,8 @@ public class MyAppsActivity extends BaseActivity implements MyAppsContract.View,
     private static final String TAG = "MyAppsActivity";
 
     @BindView(R.id.top_layout_app_name) TextView toolbarTitle;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.progress_bar) ProgressBar progressBar;
     @BindView(R.id.error_holder) LinearLayout errorHolder;
     @BindView(R.id.layout_holder) View layoutHolder;

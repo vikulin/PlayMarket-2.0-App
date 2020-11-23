@@ -3,14 +3,13 @@ package com.blockchain.store.playmarket.ui.search_screen;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.SearchListAdapter;
@@ -31,7 +30,8 @@ public class SearchActivity extends BaseActivity implements SearchContract.View,
     private static final String TAG = "SearchActivity";
 
     @BindView(R.id.top_layout_app_name) TextView toolbarTitle;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.error_holder) LinearLayout errorHolder;
     @BindView(R.id.progress_bar) ProgressBar progressBar;
     @BindView(R.id.empty_view) TextView emptyView;

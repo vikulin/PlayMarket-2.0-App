@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.constraint.Group;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +12,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.constraintlayout.widget.Group;
+import androidx.fragment.app.Fragment;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.data.entities.IcoLocalData;
@@ -35,7 +36,6 @@ import rx.Observable;
 import static com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity.MAX_VALUE_ARG;
 import static com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity.MIN_VALUE_ARG;
 import static com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity.RECIPIENT_ARG;
-import static com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity.startAsTokenTransfer;
 
 public class IcoStepFragment extends Fragment {
 
@@ -53,7 +53,8 @@ public class IcoStepFragment extends Fragment {
     @BindView(R.id.ico_minutes_tv) TextView minutesTv;
     @BindView(R.id.ico_sell_count_max) TextView tokensCount;
     @BindView(R.id.ico_sell_count) TextView tokensSold;
-    @BindView(R.id.ico_purchase_token_group) Group purchaseTokenGroup;
+    @BindView(R.id.ico_purchase_token_group)
+    Group purchaseTokenGroup;
     @BindView(R.id.ico_actual_price) TextView actualPriceTv;
     @BindView(R.id.ico_purchase_button) Button purchaseButton;
     @BindView(R.id.earned_tv) TextView earned_tv;

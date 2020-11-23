@@ -1,10 +1,11 @@
 package com.blockchain.store.playmarket.views;
 
 import android.content.Context;
-import android.support.v4.widget.DrawerLayout;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
+
+import androidx.drawerlayout.widget.DrawerLayout;
 
 /**
  * Reference link - https://stackoverflow.com/questions/16754305/full-width-navigation-drawer

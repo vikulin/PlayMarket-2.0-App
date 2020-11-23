@@ -1,9 +1,10 @@
 package com.blockchain.store.dao.database;
 
-import android.arch.persistence.room.RoomDatabase;
 import com.blockchain.store.dao.database.model.Proposal;
 import com.blockchain.store.dao.database.model.Rules;
-import android.arch.persistence.room.Database;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
 @Database(entities = {Proposal.class, Rules.class}, version = 2)
 public abstract class DaoDatabase extends RoomDatabase {

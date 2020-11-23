@@ -1,8 +1,9 @@
 package com.blockchain.store.playmarket.dapps;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.webkit.CookieManager;
+
+import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.Collections;

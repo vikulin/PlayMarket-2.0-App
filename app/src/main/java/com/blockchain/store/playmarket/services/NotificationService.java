@@ -1,12 +1,12 @@
 package com.blockchain.store.playmarket.services;
 
-import android.app.IntentService;
 import android.app.Notification;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
 
 import com.blockchain.store.playmarket.utilities.Constants;
 

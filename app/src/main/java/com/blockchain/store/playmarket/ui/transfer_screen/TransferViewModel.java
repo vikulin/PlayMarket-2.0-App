@@ -1,7 +1,7 @@
 package com.blockchain.store.playmarket.ui.transfer_screen;
 
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.blockchain.store.playmarket.utilities.Constants;
 

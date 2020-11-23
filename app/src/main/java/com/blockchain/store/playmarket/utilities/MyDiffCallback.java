@@ -1,6 +1,6 @@
 package com.blockchain.store.playmarket.utilities;
 
-import android.support.v7.util.DiffUtil;
+import androidx.recyclerview.widget.DiffUtil;
 
 import com.blockchain.store.playmarket.data.entities.AppDispatcherType;
 

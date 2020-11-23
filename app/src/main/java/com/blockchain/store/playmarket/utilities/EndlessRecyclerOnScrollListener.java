@@ -1,7 +1,7 @@
 package com.blockchain.store.playmarket.utilities;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.data.entities.AppDispatcherType;
 

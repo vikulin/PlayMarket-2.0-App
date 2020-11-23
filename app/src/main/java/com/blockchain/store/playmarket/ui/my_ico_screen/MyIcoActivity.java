@@ -2,21 +2,19 @@ package com.blockchain.store.playmarket.ui.my_ico_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.blockchain.store.playmarket.R;
 import com.blockchain.store.playmarket.adapters.IcoListAdapter;
 import com.blockchain.store.playmarket.data.entities.AppInfo;
 import com.blockchain.store.playmarket.interfaces.AppInfoCallback;
 import com.blockchain.store.playmarket.ui.app_detail_screen.AppDetailActivity;
-import com.blockchain.store.playmarket.ui.invest_screen.InvestActivity;
-import com.blockchain.store.playmarket.ui.local_ico_screen.IcoLocalActivity;
 import com.blockchain.store.playmarket.ui.transfer_screen.TransferActivity;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
 
@@ -32,7 +30,8 @@ public class MyIcoActivity extends BaseActivity implements MyIcoContract.View, A
     private static final String TAG = "MyIcoActivity";
 
     @BindView(R.id.top_layout_app_name) TextView toolbarTitle;
-    @BindView(R.id.recycler_view) RecyclerView recyclerView;
+    @BindView(R.id.recycler_view)
+    RecyclerView recyclerView;
     @BindView(R.id.progress_bar) ProgressBar progressBar;
     @BindView(R.id.error_holder) LinearLayout errorHolder;
     @BindView(R.id.empty_view) TextView emptyView;

@@ -3,12 +3,10 @@ package com.blockchain.store.playmarket.ui.about_screen;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.blockchain.store.playmarket.BuildConfig;
 import com.blockchain.store.playmarket.R;
-import com.blockchain.store.playmarket.api.RestApi;
 import com.blockchain.store.playmarket.ui.webview_screen.WebViewActivity;
 import com.blockchain.store.playmarket.utilities.BaseActivity;
 import com.blockchain.store.playmarket.utilities.Constants;
