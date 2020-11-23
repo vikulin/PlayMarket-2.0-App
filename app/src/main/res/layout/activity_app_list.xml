@@ -9,7 +9,7 @@
     tools:context="com.blockchain.store.playmarket.ui.main_list_screen.MainMenuActivity">
 
 
-    <androidx.core.view.ViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
         />
 
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?android:actionBarSize"
@@ -76,11 +76,11 @@
                         android:layout_gravity="center"
                         android:paddingRight="16dp"
                         android:src="@drawable/search"
-                        android:tint="@color/drawer_toggle_color" />
+                        app:tint="@color/drawer_toggle_color" />
 
                 </LinearLayout>
 
-            </android.support.v7.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
             <com.miguelcatalan.materialsearchview.MaterialSearchView
                 android:id="@+id/search_view"
@@ -94,7 +94,7 @@
         </FrameLayout>
 
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <View
         android:id="@+id/tab_layout_divider"
@@ -111,7 +111,7 @@
         android:visibility="visible"
         >
 
-        <android.support.design.widget.TabLayout
+        <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="0dp"
             android:layout_height="52dp"
@@ -139,7 +139,7 @@
                 android:layout_height="22dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/dapps"
-                android:tint="#707070" />
+                app:tint="#707070" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                 android:layout_height="22dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/icon_exchange"
-                android:tint="#707070" />
+                app:tint="#707070" />
 
             <TextView
                 android:layout_width="wrap_content"
