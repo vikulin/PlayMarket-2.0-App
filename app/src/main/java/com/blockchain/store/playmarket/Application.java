@@ -56,7 +56,9 @@ public class Application extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Fabric.with(this, new Crashlytics());
+        if (BuildConfig.ENABLE_CRASHLYTICS) {
+            Fabric.with(this, new Crashlytics());
+        }
         instance = this;
 
         MultiDex.install(this);

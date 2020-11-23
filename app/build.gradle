@@ -38,7 +38,6 @@ android {
             resValue "string", "package_name", "com.blockchain.store.playmarket.PurchaseSDK.services.PlayMarketSDK"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            ext.enableCrashlytics = false
         }
 
         debug {
@@ -46,7 +45,6 @@ android {
             resValue "string", "app_name_by_gradle", "DAO PlayMarket 2.0 RinkeBy"
             resValue "string", "content_provider", "com.blockchain.store.playmarket.testnet.fileprovider"
             resValue "string", "package_name", "com.blockchain.store.playmarket.rinkeby.PurchaseSDK.services.PlayMarketSDK"
-            ext.enableCrashlytics = false
         }
 
         mainnet {
@@ -59,7 +57,6 @@ android {
             jniDebuggable false
             renderscriptDebuggable false
             minifyEnabled false
-            ext.enableCrashlytics = false
         }
 
         bundle {
@@ -75,6 +72,7 @@ android {
         }
 
         applicationVariants.all { variant ->
+            buildConfigField "boolean", "ENABLE_CRASHLYTICS", "false"
             variant.outputs.all { output ->
                 def buildType =  variant.buildType.name
                 def newApkName
